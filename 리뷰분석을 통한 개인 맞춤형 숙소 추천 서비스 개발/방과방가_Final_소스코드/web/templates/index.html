@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Room&Hi</title>
+    <link href="../static/css/styles.css" rel="stylesheet" />
+
+    <style>
+        body {
+            background-size: cover;
+        background-image:url("../static/img/그림4.png");
+          
+        }
+
+        
+    </style>
+</head>
+<body>
+
+   
+ 
+    
+    <div class="overlay" id="overlay">
+        <div class="text-container">
+            <p class="microphone-in-use">마이크 사용중...</p>
+            <button type="button" id="cancelButton">취소</button>
+        </div>
+    </div>
+   
+
+    <div class="search-container">
+        <div class="search-wrapper">
+            <form class="search-box" action="/result">
+                <div class="search-image3" style="margin-top:227px; margin-left: 297px;">
+                    <img src="../static/img/룸앤하이_가로.png" style="width:320px">
+                </div>
+                     
+          
+                <form class="search-box3" action="/result" onsubmit="showLoader()"> 
+                    <input type="text" id="search" name="search" required value="{{''.join(gu_send)}}" required placeholder="예) 저렴하게 호캉스하기 좋은 깔끔한 호텔 알려줘">
+                    <!-- <button type="submit">검색</button> -->
+                    <button type="button" id="micButton" style="background: none;  border: none;  padding: 0;">
+                        <img src="../static/img/mic2.png" alt="마이크" style="width: 25px; height: 25px;">
+                    </button> 
+                    
+                </form>
+                <form  class="search-button" action="/pick">
+                    <div class="button-wrapper">
+                    <button class="speech-bubble">저희가 추천해드릴까요? <br> click here</button> <br>
+                    <div id="loader" class="d-none" style="text-align: center; padding-left: 10px;"> 
+                        <img style="width: 50px; height: 50px;" src="../static/img/load.gif" />
+                      </div>
+                </form>     
+                <script>
+                    function showLoader() {
+                      document.getElementById("loader").classList.remove("d-none");
+                    }
+                  </script>
+        </div>
+          
+        <script src="/static/js/stt.js"></script>
+</body>
+</html>

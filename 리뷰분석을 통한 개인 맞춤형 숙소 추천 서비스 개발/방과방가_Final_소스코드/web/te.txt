@@ -1,0 +1,51 @@
+ # 레이더 차트에 사용할 데이터
+    data = {
+            "labels": cat_lst,
+            "datasets": [
+                {
+                    "label": score_df.iloc[0,0].tolist(),
+                    "data": score_df.iloc[0,1:].values.tolist(),
+                    "fill": True,
+                    "backgroundColor": "rgba(255, 99, 132, 0.2)",
+                    "borderColor": "rgba(255, 99, 132, 1)",
+                    "pointBackgroundColor": "rgba(255, 99, 132, 1)",
+                    "pointBorderColor": "#fff",
+                    "pointHoverBackgroundColor": "#fff",
+                    "pointHoverBorderColor": "rgba(255, 99, 132, 1)"
+                },
+                {
+                    "label": score_df.iloc[1,0].tolist(),
+                    "data": score_df.iloc[1,1:].values.tolist(),
+                    "fill": True,
+                    "backgroundColor": "rgba(54, 162, 235, 0.2)",
+                    "borderColor": "rgba(54, 162, 235, 1)",
+                    "pointBackgroundColor": "rgba(54, 162, 235, 1)",
+                    "pointBorderColor": "#fff",
+                    "pointHoverBackgroundColor": "#fff",
+                    "pointHoverBorderColor": "rgba(54, 162, 235, 1)"
+                }
+            ]
+        }
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Flask 레이더 차트 예제</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.0/chart.min.js"></script>
+</head>
+<body>
+    <div style="width: 200px; height: 200px;">
+        <canvas id="MyChart" width="200" height="200"></canvas>
+      </div>
+      <script>
+        var canvas = document.getElementById('MyChart');
+        canvas.style.width = '200px';
+        canvas.style.height = '200px';
+        var data = {{ data | tojson }};
+        var chart = new Chart(canvas, {
+          type: 'radar',
+          data: data,
+          options: {}
+        });
+      </script>
+</html>

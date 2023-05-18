@@ -1,0 +1,32 @@
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+</head>
+
+<body>
+
+    <table border="1">
+        <tr>
+            <td>게시글번호</td>
+            <td>게시글제목</td>
+            <td>작성자</td>
+        </tr>
+        <th:block th:if="${boardList} != null">
+            <tr th:each="board : ${boardList}">
+                <td th:text="${board.boardNo}"></td>
+                <td>
+                    <a th:href="@{/board/boardDetail(boardNo=${board.boardNo})}">[[${board.boardTitle}]]</a>
+                </td>
+                <td th:text="${board.boardWriter}"></td>
+            </tr>
+        </th:block>
+        <th:block th:unless="${boardList} != null">
+            <tr>
+                <td colspan="3">게시글이 존재 하지 않습니다.</td>
+            </tr>
+        </th:block>
+    </table>
+    <a href="/board/boardCreate">글쓰기</a>
+</body>
+
+</html>

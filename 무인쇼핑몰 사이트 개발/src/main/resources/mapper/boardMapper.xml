@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="mini.project.pro.mapper.BoardMapper">
+        <select id="boardList" resultType="mini.project.pro.model.Board">
+            select * from board
+        </select>
+
+        <insert id="boardCreate" parameterType="mini.project.pro.model.Board">
+            insert into board values( NULL , #{boardTitle},#{boardContent},#{boardWriter})
+        </insert> 
+
+        <update id="boardUpdate" parameterType="mini.project.pro.model.Board">
+            update board
+            set boardTitle=#{boardTitle}, boardContent=#{boardContent}
+            where boardNo=#{boardNo}
+        </update>
+
+        <delete id="boardRemove" parameterType="int">
+            delete from board where boardNo=#{boardNo}
+        </delete>
+</mapper>

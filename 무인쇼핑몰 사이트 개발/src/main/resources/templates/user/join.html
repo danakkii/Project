@@ -1,0 +1,40 @@
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+</head>
+
+<body>
+
+    <center> <h1> 환영합니다!</h1></center>
+    <center> <h6> 실생활에 편리한 무인결제시스템, 지금 바로 시작해 보세요.</h6></center>
+    
+    
+    
+    <center><form action="/user/join" method="post">
+        <h7>아이디</h7>
+        <input type="txt" placeholder="id" name="userId"/><br><br>
+        <h7>비밀번호</h7>
+        <input type="text" placeholder="password" name="userPw"/><br><br>
+        <h7>이름</h7>
+        <input type="text" placeholder="이름" name="userName"/><br><br>
+        <h7>이메일</h7>
+        <input type="text" placeholder="이메일" name="userEmail"/><br><br>
+        <input type="submit" style = background-color:skyblue value="회원가입"/>
+        
+        
+    </form> </center>
+    
+    <center><img src = "https://miro.medium.com/max/1400/1*t6uFobPbakfa83rdIQPd4g.jpeg" alt="i'm not a robot" width="300" height="200"></center>
+
+</form>
+
+    
+ <th:block th:unless="${session.user} == null">
+
+
+        <a href="/user/logout">로그아웃</a> | <span>[[${session.user.userName}]]님 환영합니다.</span> <br/>
+        <a href="/board/boardList">게시판</a>
+    </th:block>  
+</body>
+
+</html>
