@@ -1,0 +1,33 @@
+rank_Local,rank_Global,team_Name,rating,average_Rank,average_Rating,group_Name,distance(default = from Quatar,,Continental,GDP(2022),"Population(2022,per 10,000)",star_Player,1year_Change_Rank,1year_Change_Rating
+1,1,Brazil,2169,4,1999,group_G,11974.67?km,13.12,America,"8,857","21,399","Gabriel Jesus,Gabriel Martinelli,Vinicius junior",0,20
+2,2,Argentina,2143,5,1984,group_C,13817.43km,15.14,America,"13,621","4,560",,1,42
+3,3,Spain,2045,7,1941,group_E,5304.62km,5.81,Europe,"29,198","4,674","Iago aspas,Joselu,Mikel merino,Muniain,Sergio busquets",2,8
+4,4,Netherlands,2040,15,1844,group_A,4848.23km,5.31,Europe,"56,297","1,740",,8,111
+5,5,Belgium,2025,23,1751,group_F,4844.61km,5.31,Europe,"50,597","1,187","Kevin de Bruyne,Thibaut courtois",-1,-50
+6,6,France,2005,16,1784,group_D,4889.93?km,5.36,Europe,"42,330","6,542","William Saliba,Karim benzema,Nabil fekir,Nkunku,Modeste,Moussa diaby,Alassane plea",-4,-110
+7,7,Portugal,2004,19,1789,group_H,5688.18?km,6.23,Europe,"24,910","1,016","Joao Cancelo,Andre silva",1,31
+8,9,Denmark,1971,20,1798,group_D,4785.08km,5.24,Europe,"65,713",581,,1,34
+9,10,Germany,1963,8,1910,group_E,4477.97km,4.91,Europe,"48,397","8,431","Gnabry,Jonas hofmann,Jonathan burkhardt,Polter",-1,0
+10,11,Uruguay,1936,12,1878,group_H,12997.55km,14.24,America,"20,017",340,,6,88
+11,12,Switzerland,1929,27,1684,group_G,4459.48?km,4.89,Europe,"92,434",872,Granit Xhaka,-1,-5
+12,13,Croatia,1927,13,1876,group_F,3887.92km,4.26,Europe,"17,318",405,,1,69
+13,14,England,1920,4,1979,group_B,5502.04km,6.03,Europe,"47,317","6,820","Phil Foden,Harry Kane,Kieran Trippier",-8,-112
+14,16,Serbia,1892,20,1785,group_G,3419.83?km,3.75,Europe,"9,164",881,,2,46
+15,18,Ecuador,1833,65,1510,group_A,14000.41?km,15.34,America,"6,412","1,751",,-2,-24
+16,21,Poland,1814,29,1711,group_C,3997.16km,4.38,Europe,"19,023","3,779",Lewandowski,8,44
+17,22,Mexico,1809,20,1778,group_C,13876.65km,15.21,America,"10,948","13,152",,-3,-33
+18,23,United States,1798,41,1639,group_B,12255.12km,13.43,America,"75,179","33,600",,-9,-60
+18,23,Japan,1798,62,1453,group_E,8131.14?km,8.91,Asia,"34,358","12,536",,8,38
+20,25,Iran,1797,40,1654,group_B,823.28km,0.9,Asia,"23,033","8,530",,-5,-39
+21,26,Wales,1790,22,1667,group_B,5502.04km,6.03,Europe,"47,317","6,820",,-6,-46
+22,28,South Korea,1786,35,1687,group_H,7238.82?km,7.93,Asia,"33,591","5,182",,-1,-1
+23,29,Canada,1765,47,1599,group_F,10708.18km,11.74,America,"56,794","3,839",,-1,-20
+24,31,Morocco,1753,44,1653,group_F,5669.35km,6.21,Africa,"3,896","1,174",,10,32
+25,35,Costa Rica,1743,35,1693,group_E,13767.34km,15.09,America,"13,089",522,,24,126
+26,38,Australia,1719,34,1671,group_D,10501.03km,11.51,Oceania,"66,407","2,603",,-5,-14
+27,40,Tunisia,1707,52,1603,group_D,4106.61km,4.5,Africa,"3,815","1,227",,12,62
+28,44,Senegal,1687,56,1588,group_A,6903.5km,7.57,Africa,"1,558","1,722",,-2,-18
+29,48,Qatar,1680,94,1411,group_A,0km,0,Asia,"82,886",279,,5,37
+30,54,Saudi Arabia,1635,76,1496,group_C,638.24km,0.7,Asia,"27,941","3,650",,-10,-48
+31,61,Cameroon,1609,52,1605,group_G,4574.46km,5.01,Africa,"1,584","2,434",,0,0
+32,73,Ghana,1540,43,1656,group_H,5846.27km,6.41,Africa,"2,368","3,173",,-11,-64
